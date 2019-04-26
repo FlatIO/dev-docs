@@ -21,8 +21,6 @@ Many people and companies have requested us to use our great technology and beau
 * You can easily create and edit sheet music with our web editor [Flat](https://flat.io) and display them in no time on any web page.
 * We manage the hosting, the maintenance and of course the automatic updates and improvements with no modifications required on your end!
 
-We store and replicate every revision of every sheet music across multiple countries (US, Canada, France) as well as the platform itself (US, Netherlands, Singapore) to provide the best performances for any Internet user in the world.
-
 ## Flat's Embed
 
 The basic version of our embed is available for everyone for free. Just [sign up](https://flat.io), create or open any sheet music on Flat, click on "Share > Embed" and you directly get the HTML code ready to use!
