@@ -9,8 +9,21 @@ We regularly update our API and services, you can discover all the changes to ou
 
 ## Upcoming deprecations
 
-* On 2019-01-01:
+* On 2019-09-01:
   * `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
+
+## v2.8.0 (2019-04-27)
+
+* feat(scores): New metadata and update of `PUT /v2/scores/{score}`:
+  * `subtitle`, `composer`, `lyricist` and `licenseText` properties has been added
+  * when updating `title`, `subtitle`, `composer`, `lyricist` and `licenseText` via the API, the modifications events will be pushed to our real-time engine, and a new version will be scheduled (asynchronous)
+  * `description` can now be up to 2000 characters (was previously 1000)
+* feat(submissions): Added education submissions states (`created`, `turnedIn`, `returned`)
+* feat(revisions): Return the last modification `event` when fetching a revision metadata (UUID)
+* feat(locale): added Turkish (`tr`)
+* feat(licenses): added new license source `appStore`
+* feat(user): added `isFlatTeam` property to public profiles
+* chore(specs): Inline schemas `UserInstruments`, `ResourceSharingKey`, `ScoreData`, `ScoreDataEncoding`, `CollectionTitle`
 
 ## v2.7.0 (2018-09-11)
 
@@ -50,7 +63,7 @@ We regularly update our API and services, you can discover all the changes to ou
   * `ScoreCollaboratorCreation` -> `ResourceCollaboratorCreation`
   * existing _score sharing key_ -> `ResourceSharingKey`
 * **DEPRECATED**: `GET /scores/{score}/revisions/{revision}/{format}` no longer support part indexes for single/set of parts exports, but our own part UUIDs.
-* **DEPRECATED** on 2019-01-01: `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
+* **DEPRECATED** on 2019-09-01: `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
 
 ## v2.5.2 (2018-02-07)
 
