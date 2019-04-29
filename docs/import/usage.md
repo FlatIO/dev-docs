@@ -19,7 +19,6 @@ Parameters:
 |:-----|:------------|:--------|
 | `url` | The full URL of the **MusicXML** or **MIDI** file to import. The file must be publicly accessible and served with [CORS](#cors) | Required |
 | `title` | The title of the file you are importing | Optional, default: `New music score` |
-| `privacy` | The privacy mode of the imported file | Optional, `private` or `public`, default: `private` |
 | `app` | If you have an [app id](https://flat.io/developers/apps), you can provide it here. Your App name and logo will be displayed on the landing page. | Optional |
 
 ## Example
