@@ -23,12 +23,10 @@ You can use your favorite HTTP/REST library for your programming language to use
 2. **Try the API in 5 minutes** with [a Personal Access Token for your Flat account](authentication.html#personal-access-tokens).
 3. If you plan to make the app available for other people, [request some OAuth2 Credentials to our product team](https://docs.google.com/forms/d/e/1FAIpQLSeW4sZuUrcBXEtbecJ8xlWL9anbFCsrpHBgc6C48DOE4zuElQ/viewform).
 
-## Beta
+## About this API
 
-Please note that this public API is currently in beta and subject to change.
+Our whole platform and apps are based on this API, however not all the endpoints are made available publicly. Feel free to [contact us](mailto:developers@flat.io) if you have any questions, feedback or features requests.
 
-Our whole platform and apps are based on this API, however not all the endpoints are available publicly yet. Feel free to [contact us](mailto:developers@flat.io) if you have any questions, feedback or features requests.
+By using this API, and especially on the behalf of a user account, you must accept, respect and enforce our [Terms of Service and Privacy Policy](https://flat.io/help/en/policies).
 
-We don't offer any guarantees during this beta period. By using this API, you agree to update your app in a timely fashion in response to any beta-period changes that are rolled out.
-
-By using this API, and especially on the behalf of a user account, you must accept, respect and enforce our [Terms of Service and Privacy Policy](https://flat.io/legal).
+We don't offer any guarantees regading the future of this API. By using this API, you agree to update your app in a timely fashion in response to any changes that are rolled out.
