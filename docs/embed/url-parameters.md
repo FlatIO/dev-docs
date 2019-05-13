@@ -40,11 +40,9 @@ The following features require an Embed API Key to be used.
 | [`branding`](#remove-flat-branding-branding) | Display or hide Flat logo | `true` or `false` (default = `true`)|
 | [`controlsDisplay`](#display-or-hide-the-controls-controlsdisplay) | Display or hide main controls | `true` or `false` (default = `true`)|
 | [`controlsPosition`](#change-controls-position-controlsposition) | Controls position | `bottom` or `top` (default = `bottom`)|
-| [`controlsMetronome`](#display-or-hide-metronome-control-controlsmetronome) | Display or hide the metronome | `true` or `false` (default = `true`)|
-| [`controlsPlay`](#display-or-hide-playback-control-controlsplay) | Display or hide the play/stop button | `true` or `false` (default = `true`)|
+| [`controlsPlay`](#display-or-hide-playback-control-controlsplay) | Display or hide the playback controls | `true` or `false` (default = `true`)|
 | [`controlsFullscreen`](#display-or-hide-fullscreen-control-controlsfullscreen) | Display or hide the fullscreen button | `true` or `false` (default = `true`)|
 | [`controlsPanel`](#display-or-hide-the-extra-controls-button-controlspanel) | Display or hide the extra controls button | `true` or `false` (default = `true`)|
-| [`controlsVolume`](#display-or-hide-volume-controls-controlsvolume) | Display or hide the volume controls | `true` or `false` (default = `true`)|
 | [`controlsZoom`](#display-or-hide-zoom--controls-controlszoom) | Display or hide the zoom control | `true` or `false` (default = `true`)|
 | [`controlsPrint`](#display-or-hide-print-control-controlsprint) | Display or hide the print button | `true` or `false` (default = `true`)|
 
@@ -56,6 +54,7 @@ On any score on hosted on Flat, you can link one or multiple audio/video sources
 |:----------------|:--------|:-------|
 | `audioSource` | Audio source to use when loading the embed | `playback`, `default` (the track marked as default, or playback if none), or the [unique identifier of the track to use](https://flat.io/developers/api/reference/#operation/listScoreTracks) (default value = `playback`) |
 | [`videoPosition`](#video-position-videoposition) | Display position of the video in the embed | `top`, `bottom`, `left`, `float`, `hidden` (default = `hidden`) |
+| `playbackMetronome` | Metronome mode | `count-in`, `inactive`, `active` (default = `inactive`) |
 
 ## Playback options
 
@@ -126,12 +125,6 @@ By default the controls are displayed at the `bottom` of the embed. You can choo
 
 ![Embed controls at the top]({{site.baseurl}}/assets/img/embed-ctrl-top.png)
 
-### Display or hide Metronome control (`controlsMetronome`)
-
-This control is displayed by default, you can hide it by setting this parameter to `false`.
-
-![Metronome control]({{site.baseurl}}/assets/img/embed-metronome-ctrl.png)
-
 ### Display or hide Playback control (`controlsPlay`)
 
 This control is displayed by default, you can hide it by setting this parameter to `false`.
@@ -149,12 +142,6 @@ This control is displayed by default, you can hide it by setting this parameter 
 This control is displayed by default, you can hide it by setting this parameter to `false`.
 
 ![Side Panel control]({{site.baseurl}}/assets/img/embed-panel-ctrl.png)
-
-### Display or hide Volume controls (`controlsVolume`)
-
-The volume controls are displayed by default when the playback is used, you can disable it by setting this parameter to `false`.
-
-![Volume control]({{site.baseurl}}/assets/img/embed-volume-ctrl.png)
 
 ### Display or hide Zoom  controls (`controlsZoom`)
 

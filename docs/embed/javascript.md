@@ -17,10 +17,10 @@ npm install flat-embed
 yarn add flat-embed
 ```
 
-or use the latest version hosted on jsDelivr:
+Or use the latest version hosted on our CDN:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/flat-embed@v0.11.0/dist/embed.min.js"></script>
+<script src="https://prod.flat-cdn.com/embed-js/v1.0.0/embed.min.js"></script>
 ```
 
 ## Getting Started
@@ -29,14 +29,14 @@ The simplest way to get started is to pass a DOM element to our embed that will 
 
 ```html
 <div id="embed-container"></div>
-<script src="https://cdn.jsdelivr.net/npm/flat-embed@v0.11.0/dist/embed.min.js"></script>
+<script src="https://prod.flat-cdn.com/embed-js/v1.0.0/embed.min.js"></script>
 <script>
   var container = document.getElementById('embed-container');
   var embed = new Flat.Embed(container, {
     score: '<score-id-you-want-to-load>',
     embedParams: {
       appId: '<your-app-id>',
-      controlsFloating: false
+      controlsPosition: 'bottom',
     }
   });
 </script>
@@ -101,8 +101,6 @@ When instantiating `Flat.Embed`, you can pass options in the second parameter. I
   * [`focusScore`](#focusscore-promisevoid-error): Set the focus to the score
   * [`getCursorPosition`](#getcursorposition-promiseobject-error): Get the current cursor position of the score
   * [`setCursorPosition`](#setcursorpositionposition-object-promiseobject-error): Set a new position for the cursor
-* [Editor Methods](#editor-methods)
-  * [`setEditorConfig`](#seteditorconfigconfig-object-promiseobject-error): Set the config of the editor
 * [Events API](#events-api)
   * [`scoreLoaded`](#event-scoreLoaded): A new score has been loaded
   * [`cursorPosition`](#event-cursorposition): The cursor position changed
@@ -485,19 +483,6 @@ var embed = new Flat.Embed(container, {
     appId: '<your-app-id>',
     mode: 'edit'
   }
-});
-```
-
-### `setEditorConfig(config: object): Promise<object, Error>`
-
-**NOTE: "Modes" are now deprecated and new options will be available for this method in the upcoming weeks. [Please contact our team](mailto:developers@flat.io) if you are interested in customizing the embed editor.**
-
-Set a new config for the editor (e.g. the different tools available in the embed). This one will be used at the next loading score.
-
-```js
-embed.setEditorConfig({}).then(function (config) {
-  // The config of the embed
-  console.log(config);
 });
 ```
 
