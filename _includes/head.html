@@ -7,6 +7,6 @@
   <meta name="theme-color" content="#6E90F6">
   {% assign lvl = page.url | append:'X' | split:'/' | size %}
   {% capture relative %}{% for i in (3..lvl) %}../{% endfor %}{% endcapture %}
-  <link href="{{ relative }}assets/css/index.css" rel="stylesheet">
+  <link href="{{ relative }}assets/css/index.css?0" rel="stylesheet">
   {% seo %}
 </head>
