@@ -2,6 +2,7 @@
 title: Sheet music Embed
 description: Use our high-quality music and tabs notation engraving in your web sites and blogs with our customizable and interactive HTML Embed.
 permalink: embed/
+nav: embed
 pid: embed-intro
 ---
 

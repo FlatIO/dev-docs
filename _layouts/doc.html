@@ -2,43 +2,9 @@
 layout: default
 ---
 
-<div class="sidenav">
-  <div class="items">
-    <a href="{{site.baseurl}}/" class="{% if page.pid == 'home' %}active{% endif %}">Overview</a>
-  </div>
-
-  <div class="nav-title">Embed</div>
-  <div class="items">
-    <a href="{{site.baseurl}}/embed/" class="{% if page.pid == 'embed-intro' %}active{% endif %}">Introduction</a>
-    <a href="{{site.baseurl}}/embed/getting-started.html" class="{% if page.pid == 'embed-start' %}active{% endif %}">Getting Started</a>
-    <a href="https://flat.io/developers/embed/generator">HTML code generator</a>
-    <a href="{{site.baseurl}}/embed/url-parameters.html" class="{% if page.pid == 'embed-url' %}active{% endif %}">URL parameters</a>
-    <a href="{{site.baseurl}}/embed/javascript.html" class="{% if page.pid == 'embed-js' %}active{% endif %}">JavaScript Client</a>
-    <a href="{{site.baseurl}}/embed/oembed.html" class="{% if page.pid == 'embed-oembed' %}active{% endif %}">oEmbed</a>
-  </div>
-
-  <div class="nav-title">REST API</div>
-  <div class="items">
-    <a href="{{site.baseurl}}/api/" class="{% if page.pid == 'api-intro' %}active{% endif %}">Introduction</a>
-    <a href="{{site.baseurl}}/api/authentication.html" class="{% if page.pid == 'api-auth' %}active{% endif %}">Authentication</a>
-    <a href="https://flat.io/developers/api/reference/">OpenAPI/Swagger Specification</a>
-    <a href="{{site.baseurl}}/api/sdks.html" class="{% if page.pid == 'api-sdks' %}active{% endif %}">SDKs</a>
-    <a href="{{site.baseurl}}/api/rate-limits.html" class="{% if page.pid == 'api-rate-limits' %}active{% endif %}">Rate Limits</a>
-    <a href="{{site.baseurl}}/api/errors.html" class="{% if page.pid == 'api-errors' %}active{% endif %}">Errors</a>
-    <a href="{{site.baseurl}}/api/changelog.html" class="{% if page.pid == 'api-changelog' %}active{% endif %}">API Changelog</a>
-  </div>
-
-  <div class="nav-title">Import API</div>
-  <div class="items">
-    <a href="{{site.baseurl}}/import/" class="{% if page.pid == 'import-usage' %}active{% endif %}">Usage</a>
-    <a href="{{site.baseurl}}/graphic-assets/" class="{% if page.pid == 'graphic-assets' %}active{% endif %}">Graphic assets</a>
-  </div>
-
-  <div class="nav-title">LTI</div>
-  <div class="items">
-    <a href="{{site.baseurl}}/lti/" class="{% if page.pid == 'lti-usage' %}active{% endif %}">Usage</a>
-  </div>
-</div>
+{% if page.nav == 'rest' %}{% include nav-rest.html %}
+{% elsif page.nav == 'import' %}{% include nav-import.html %}
+{% elsif page.nav == 'embed' %}{% include nav-embed.html %}{% endif %}
 
 <div class="page">
   {% unless page.notitle %}<h1>{{ page.title }}</h1>{% endunless %}

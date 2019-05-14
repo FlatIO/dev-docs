@@ -2,6 +2,7 @@
 title: Flat REST API Changelog
 description: Discover the latest changes of Flat's REST API
 permalink: api/changelog.html
+nav: rest
 pid: api-changelog
 ---
 

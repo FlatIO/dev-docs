@@ -2,6 +2,7 @@
 title: Flat Platform's REST API
 description: Use our high-quality music and tabs notation engraving in your web sites and blogs with our customizable and interactive HTML Embed.
 permalink: api/
+nav: rest
 pid: api-intro
 ---
 

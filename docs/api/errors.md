@@ -1,6 +1,7 @@
 ---
 title: Flat REST API Errors
 permalink: api/errors.html
+nav: rest
 pid: api-errors
 ---
 

@@ -2,6 +2,7 @@
 title: Sheet music Embed URL parameters
 description: Quickly customize our music notation engraving embed with the different URL parameters available and add your own sheet music viewer on your website.
 permalink: embed/url-parameters.html
+nav: embed
 pid: embed-url
 ---
 

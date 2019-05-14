@@ -1,6 +1,7 @@
 ---
-title: Flat API SDKs
+title: Flat REST API SDKs
 permalink: api/sdks.html
+nav: rest
 pid: api-sdks
 ---
 

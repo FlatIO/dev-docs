@@ -2,6 +2,7 @@
 title: API Rate Limits
 description: Discover how the Rate Limits of the Flat Platform's API.
 permalink: api/rate-limits.html
+nav: rest
 pid: api-rate-limits
 ---
 

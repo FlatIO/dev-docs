@@ -2,6 +2,7 @@
 title: Import API
 description: Easy import any MusicXML or MIDI file available the Internet
 permalink: import/
+nav: import
 pid: import-usage
 ---
 

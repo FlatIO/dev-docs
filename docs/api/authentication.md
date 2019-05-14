@@ -1,6 +1,7 @@
 ---
 title: Flat API Authentication
 permalink: api/authentication.html
+nav: rest
 pid: api-auth
 ---
 

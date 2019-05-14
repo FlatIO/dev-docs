@@ -2,6 +2,7 @@
 title: Certified LTI Provider
 description: Flat is a Certified LTI Provider. If you are using an LTI consumer, check out our information on how you can use Flat with your product.
 permalink: lti/
+nav: rest
 pid: lti-usage
 ---
 

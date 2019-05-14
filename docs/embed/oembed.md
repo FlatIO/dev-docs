@@ -2,6 +2,7 @@
 title: Sheet music oEmbed
 description: Simply use our music notation engraving interactive embed in your web pages with the oEmbed standard.
 permalink: embed/oembed.html
+nav: embed
 pid: embed-oembed
 ---
 

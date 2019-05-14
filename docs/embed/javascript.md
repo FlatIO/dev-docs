@@ -2,6 +2,7 @@
 title: Sheet music Embed JavaScript SDK
 description: Interact with our Sheet Music Embed, Get user events from our viewer and editor
 permalink: embed/javascript.html
+nav: embed
 pid: embed-js
 ---
 Use this JavaScript Client to interact and receive events from our [Sheet Music Embed](https://flat.io/developers/embed).
