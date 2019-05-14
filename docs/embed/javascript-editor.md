@@ -10,7 +10,7 @@ You can use our [JavaScript SDK](javascript-editor.html) to embed our editor any
 
 You can also use our [code generator](https://flat.io/developers/embed/generator) to generate the JS initializing our embeddable editor with the customizations options you want.
 
-Here is a simple example using the same score [from our introduction]({{site.baseurl}}/embed/) as an editable template you can export once edited. [The source code of this page and example is available on our GitHub](https://github.com/{{ site.github.repository_nwo }}/blob/master/_includes/embed-editor-sample.html).
+Here is a simple example using the same score [from our introduction]({{site.baseurl}}/embed/) as an editable template you can export once edited. **[The source code of this page and example is available on our GitHub](https://github.com/{{ site.github.repository_nwo }}/blob/master/_includes/embed-editor-sample.html)**.
 
 {% include embed-editor-sample.html %}
 
