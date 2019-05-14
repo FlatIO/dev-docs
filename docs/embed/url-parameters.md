@@ -55,6 +55,7 @@ On any score on hosted on Flat, you can link one or multiple audio/video sources
 | `audioSource` | Audio source to use when loading the embed | `playback`, `default` (the track marked as default, or playback if none), or the [unique identifier of the track to use](https://flat.io/developers/api/reference/#operation/listScoreTracks) (default value = `playback`) |
 | [`videoPosition`](#video-position-videoposition) | Display position of the video in the embed | `top`, `bottom`, `left`, `float`, `hidden` (default = `hidden`) |
 | `playbackMetronome` | Metronome mode | `count-in`, `inactive`, `active` (default = `inactive`) |
+| `MIDI` | Enable MIDI Output Controls | `true` or `false` (default = `false`)|
 
 ## Playback options
 
