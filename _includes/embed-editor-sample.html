@@ -1,4 +1,6 @@
+<!-- The container for our embed-->
 <div id="embed-example"></div>
+<!-- Buttons displayed under our embed demo -->
 <div class="embed-example-ctas">
   <button id="export-xml" class="btn-cta-site">Export to MusicXML</button>
   <button id="export-midi" class="btn-cta-site">Export to MIDI</button>
@@ -10,11 +12,10 @@
   // Create embed in the `embed-example` div. By default the embed will fit its container
   var container = document.getElementById('embed-example');
   var embed = new Flat.Embed(container, {
-    // The score we use here as template.
+    // The score hosted on Flat we use here as template.
     // You can also use `embed.loadMusicXML(score)` to load your MsuicXML on the fly:
     // https://flat.io/developers/docs/embed/javascript.html#loadmusicxmlscore-mixed-promisevoid-error
     score: '56ae21579a127715a02901a6',
-
     // The embed configuration parameters
     embedParams: {
       mode: 'edit',
@@ -25,7 +26,7 @@
     }
   });
 
-  // Helper function to force the download of a file
+  // Helper function to force downloading the exported file
   var exportFile = function (buffer, mimeType, ext) {
     var blobUrl = window.URL.createObjectURL(new Blob([buffer], {
         type: mimeType,
