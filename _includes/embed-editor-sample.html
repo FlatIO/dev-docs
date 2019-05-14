@@ -1,0 +1,65 @@
+<div id="embed-example"></div>
+<div class="embed-example-ctas">
+  <button id="export-xml" class="btn-cta-site">Export to MusicXML</button>
+  <button id="export-midi" class="btn-cta-site">Export to MIDI</button>
+  <button id="export-png" class="btn-cta-site">Export to PNG</button>
+</div>
+<script src="https://prod.flat-cdn.com/embed-js/v1.1.0/embed.min.js"></script>
+<script>
+  var container = document.getElementById('embed-example');
+  var embed = new Flat.Embed(container, {
+    score: '56ae21579a127715a02901a6',
+    height: '500px',
+    embedParams: {
+      // Required params
+      mode: 'edit',
+      appId: '59e7684b476cba39490801c2',
+      // Customization: https://flat.io/developers/docs/embed/url-parameters.html
+      branding: false,
+      controlsPosition: 'top',
+    }
+  });
+  // Helper function to force the download of a file
+  var exportFile = function (buffer, mimeType, ext) {
+    var blobUrl = window.URL.createObjectURL(new Blob([buffer], {
+        type: mimeType,
+      }));
+      var a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = 'exported-score.' + ext;
+      document.body.appendChild(a);
+      a.style = 'display: none';
+      a.click();
+      a.remove();
+  };
+  // Export as MusicXML when the button is clicked
+  // https://flat.io/developers/docs/embed/javascript.html#getmusicxmloptions-object-promisestringuint8array-error
+  document.getElementById('export-xml').addEventListener('click', function () {
+    embed.getMusicXML({ compressed: true }).then(function (buffer) {
+      exportFile(buffer, 'application/vnd.recordare.musicxml+xml', 'mxl');
+    });
+  });
+  // Export as MIDI when the button is clicked
+  // https://flat.io/developers/docs/embed/javascript.html#getmidi-promiseuint8array-error
+  document.getElementById('export-midi').addEventListener('click', function () {
+    embed.getMIDI().then(function (buffer) {
+      exportFile(buffer, 'audio/midi', 'mid');
+    });
+  });
+  // Export as PNG when the button is clicked
+  // https://flat.io/developers/docs/embed/javascript.html#getpngoptions-object-promisestringuint8array-error
+  document.getElementById('export-png').addEventListener('click', function () {
+    embed.getPNG().then(function (buffer) {
+      exportFile(buffer, 'image/png', 'png');
+    });
+  });
+</script>
+<style>
+  .embed-example-ctas {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .embed-example-ctas button {
+    margin-right: 15px;
+  }
+</style>
