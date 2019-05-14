@@ -3,14 +3,32 @@
   border-radius: 4px;
   padding: 30px;
 
-  p, li, td {
+  font-family: Open Sans, Arial, sans-serif;
+
+  p, li, td, .p, .kbs-lists {
     font-size: 14px;
     letter-spacing: 0;
     line-height: 22.6px;
-    color: @text-color;
+    color: @text-content;
   }
 
-  p, table, img {
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  li {
+    margin-bottom: 8px;
+
+    img {
+      border: 0;
+      display: inline-block;
+    }
+  }
+
+  p, .p, table, img {
     margin-bottom: 30px;
   }
 
@@ -22,8 +40,16 @@
   ul, ol {
     margin: -15px 0 30px;
     ul, ol {
-      margin: 0 0 30px;
+      margin: 10px 0;
     }
+  }
+
+  ul.faqul {
+    margin: 0;
+    list-style: none;
+  }
+  ul.nobullets {
+    list-style: none;
   }
 
   a, a:visited, a:focus, a:active {
@@ -31,13 +57,17 @@
   }
 
   img {
+    margin: auto;
     border: 1px solid #CFD8DC;
     border-radius: 4px;
+    &.noBorder {
+      border: none;
+    }
   }
 
   h2 {
     color: @text-dark;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 0.3px;
     line-height: 30px;
     margin: 30px 0 15px 0;
@@ -54,6 +84,35 @@
     }
   }
 
+  h4 {
+    color: @text-dark;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    margin: 5px 0;
+    font-style: italic;
+  }
+  
+  h1, h2, h3, h4 {
+    display: flex;
+    align-items: center;
+
+    .header-link {
+      display: none;
+      height: 20px;
+      margin-left: 8px;
+    }
+
+    img {
+      height: 20px;
+      border: 0;
+    }
+
+    &:hover .header-link {
+      display: block;
+    }
+  }
+
   @table-border: #C9CFD5;
   table {
     width: 100%;
@@ -61,6 +120,8 @@
     border-radius: 3px;
     border-collapse: 0;
     border-spacing: 0;
+    border-right: 0;
+    border-bottom: 0;
   }
   th {
     padding: 8px 15px;
@@ -72,10 +133,8 @@
     background-image: linear-gradient(-180deg, #FFFFFF 0%, #F0F3F5 100%);
     box-shadow: 0 2px 3px 0 rgba(40,48,79,0.13);
 
+    border-right: 1px solid @table-border;
     border-bottom: 1px solid @table-border;
-    &:not(:last-child) {
-      border-right: 1px solid @table-border;
-    }
   }
   td {
     padding: 15px;
@@ -83,12 +142,6 @@
 
     border-right: 1px solid @table-border;
     border-bottom: 1px solid @table-border;
-    &:last-child {
-      border-right: 0;
-    }
-  }
-  tr:last-child td {
-    border-bottom: 0;
   }
   tr:nth-child(even) {
     background: #F2F5F7;
@@ -103,5 +156,16 @@
     color: #fff;
     padding: 15px;
     border-radius: 4px;
+  }
+
+  // Inline keyboard shortcuts
+  .p .kbs, p .kbs {
+    display: inline-block;
+  }
+
+  // Floating content
+  .fll {
+    float: left;
+    margin: 0 30px 20px 0;
   }
 }
