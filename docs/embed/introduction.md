@@ -25,7 +25,7 @@ Many people and companies have requested us to use our great technology and beau
 
 The basic version of our embed is available for everyone for free. Just [sign up](https://flat.io), create or open any sheet music on Flat, click on "Share > Embed" and you directly get the HTML code ready to use!
 
-Get our [JavaScript Client](javascript.html) to use the full capabilities of the embed: easily interact with the sheet music, load and export any file on the fly, use our... and much more!
+Get our [JavaScript SDK](javascript.html) to use the full capabilities of the embed: easily interact with the sheet music, load and export any file on the fly, use our... and much more!
 
 If you want to [customize it](url-parameters.html) (e.g. removing Flat Branding, changing the controls displayed, the colors / theme) or use our editor in the embed, just [contact our team](mailto:developers@flat.io) and we will provide a custom offer for you.
 

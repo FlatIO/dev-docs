@@ -1,5 +1,5 @@
 ---
-title: Sheet music Embed JavaScript client
+title: Sheet music Embed JavaScript SDK
 description: Interact with our Sheet Music Embed, Get user events from our viewer and editor
 permalink: embed/javascript.html
 pid: embed-js
@@ -20,7 +20,7 @@ yarn add flat-embed
 Or use the latest version hosted on our CDN:
 
 ```html
-<script src="https://prod.flat-cdn.com/embed-js/v1.0.0/embed.min.js"></script>
+<script src="https://prod.flat-cdn.com/embed-js/v1.1.0/embed.min.js"></script>
 ```
 
 ## Getting Started
@@ -29,7 +29,7 @@ The simplest way to get started is to pass a DOM element to our embed that will 
 
 ```html
 <div id="embed-container"></div>
-<script src="https://prod.flat-cdn.com/embed-js/v1.0.0/embed.min.js"></script>
+<script src="https://prod.flat-cdn.com/embed-js/v1.1.0/embed.min.js"></script>
 <script>
   var container = document.getElementById('embed-container');
   var embed = new Flat.Embed(container, {
