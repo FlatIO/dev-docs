@@ -14,7 +14,7 @@ Here is a simple example using the same score [from our introduction]({{site.bas
 
 {% include embed-editor-sample.html %}
 
-Here is how the example is done. [The complete source code of this example is available on our GitHub](https://github.com/{{ site.github.repository_nwo }}/blob/master/_includes/embed-editor-sample.html).
+Here is how the example is done. [You can view and edit this complete example on Code Sandbox](https://codesandbox.io/s/github/FlatIO/embed-demo-editor-simple).
 
 ```html
 <div id="embed-container"></div>
