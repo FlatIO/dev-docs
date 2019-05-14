@@ -10,11 +10,11 @@ When [embedding sheet music](index.html) in your website or blog, you can easily
 
 The easiest way is by adding different URL parameters of our iframe, you can find the different options available for you below.
 
-Please note that all the options referenced here are not included in our free embed, some of them may require the usage of an [API key](https://flat.io/developers/apps) or a paying plan (e.g. for custom branding). If you are not using the embed right now or need additional options not listed below, feel free to [contact us](https://flat.io/support), we will work with you to make it works for you!
+Please note that most of the customizations below are ony available in our [Embed Starter and Pro plans](https://flat.io/developers/embed), or may  require the usage of an [API key](https://flat.io/developers/apps). If you need additional options not listed below, feel free to [contact us](mailto:developers@flat.io), we will make sure our embed works for you!
 
 | Query Parameter | Summary | Values |
 |:----------------|:--------|:-------|
-| `appId` | Your application identifier (aka API key) | [Get yours](https://flat.io/support) |
+| `appId` | Your application identifier (aka API key) | [Get yours](https://flat.io/developers/embed) |
 | `sharingKey` | The score sharing key when the privacy mode is `privateLink` |  |
 
 ## Layout and Music notation Engraving parameters
@@ -27,13 +27,9 @@ These URL query strings control the engraving display of your music scores. You 
 | [`zoom`](#change-zoom-scaling-zoom) | Default zoom value | `auto` or `0.1` to `3` (default = `auto`)|
 | [`drawOnlyFirstPage`](#only-display-the-first-page-drawonlyfirstpage) | Only display the first `page` | `false` |
 
-The option `drawOnlyFirstPage` requires an API Key.
-
 ## Controls & Theme customization
 
 If you want to customize the controls, including changing their main colors or hide some of them, you can add the following options in your URL.
-
-The following features require an Embed API Key to be used.
 
 | Query Parameter | Summary | Values |
 |:----------------|:--------|:-------|
@@ -56,16 +52,14 @@ On any score on hosted on Flat, you can link one or multiple audio/video sources
 | `audioSource` | Audio source to use when loading the embed | `playback`, `default` (the track marked as default, or playback if none), or the [unique identifier of the track to use](https://flat.io/developers/api/reference/#operation/listScoreTracks) (default value = `playback`) |
 | [`videoPosition`](#video-position-videoposition) | Display position of the video in the embed | `top`, `bottom`, `left`, `float`, `hidden` (default = `hidden`) |
 | `playbackMetronome` | Metronome mode | `count-in`, `inactive`, `active` (default = `inactive`) |
-| `MIDI` | Enable MIDI Output Controls | `true` or `false` (default = `false`)|
 
-## Playback options
-
-The following features require an Embed API Key to be used.
+## Playback & MIDI options
 
 | Query Parameter | Summary | Values |
 |:----------------|:--------|:-------|
 | `playbackMetronome` | Metronome mode | `count-in`, `inactive`, `active` (default = `inactive`)|
 | `playbackVolumeMaster` | Master volume | `0` to `1` (default = `1`)|
+| `MIDI` | Enable MIDI Output Controls | `true` or `false` (default = `false`)|
 
 ## Parameters details and demos
 
