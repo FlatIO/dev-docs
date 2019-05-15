@@ -6,7 +6,7 @@ nav: embed
 pid: embed-start
 ---
 
-The easiest way to get started with our [Sheet Music embed](https://flat.io/developers/embed) is to use our [code generator](https://flat.io/developers/embed/generator). This one will build the basic HTML code for your embed and let you custom the most common [url parameters](url-parameters.html).
+The easiest way to get started with our [Sheet Music embed](https://flat.io/embed) is to use our [code generator](https://flat.io/developers/embed/generator). This one will build the basic HTML code for your embed and let you custom the most common [url parameters](url-parameters.html).
 
 You can quickly access to the generator from any sheet music hosted on Flat: click on the "Share" button on the top right of the editor, then click on "Embed". If the score is private, a private sharing link with a `sharingKey` will be generated for the document:
 

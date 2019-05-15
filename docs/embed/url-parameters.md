@@ -10,11 +10,11 @@ When [embedding sheet music](index.html) in your website or blog, you can easily
 
 The easiest way is by adding different URL parameters of our iframe, you can find the different options available for you below.
 
-Please note that most of the customizations below are ony available in our [Embed Starter and Pro plans](https://flat.io/developers/embed), or may  require the usage of an [API key](https://flat.io/developers/apps). If you need additional options not listed below, feel free to [contact us](mailto:developers@flat.io), we will make sure our embed works for you!
+Please note that most of the customizations below are ony available in our [Embed Starter and Pro plans](https://flat.io/embed), or may  require the usage of an [API key](https://flat.io/developers/apps). If you need additional options not listed below, feel free to [contact us](mailto:developers@flat.io), we will make sure our embed works for you!
 
 | Query Parameter | Summary | Values |
 |:----------------|:--------|:-------|
-| `appId` | Your application identifier (aka API key) | [Get yours](https://flat.io/developers/embed) |
+| `appId` | Your application identifier (aka API key) | [Get yours](https://flat.io/embed) |
 | `sharingKey` | The score sharing key when the privacy mode is `privateLink` |  |
 
 ## Layout and Music notation Engraving parameters
