@@ -22,7 +22,7 @@
     "retext-sentence-spacing": "^2.0.0",
     "retext-simplify": "^4.1.0",
     "retext-words": "bkeepers/retext-words",
-    "to-vfile": "^5.0.0",
+    "to-vfile": "^6.0.0",
     "unified": "^7.0.1",
     "unist-util-visit": "^1.1.1",
     "vfile-reporter": "^6.0.0",
