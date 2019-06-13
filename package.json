@@ -16,7 +16,7 @@
     "remark-stringify": "^6.0.1",
     "retext-english": "^3.0.0",
     "retext-equality": "^4.0.0",
-    "retext-quotes": "^2.0.0",
+    "retext-quotes": "^3.0.0",
     "retext-readability": "^4.1.0",
     "retext-repeated-words": "^1.0.0",
     "retext-sentence-spacing": "^3.0.0",
