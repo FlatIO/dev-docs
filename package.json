@@ -23,7 +23,7 @@
     "retext-simplify": "^5.0.0",
     "retext-words": "bkeepers/retext-words",
     "to-vfile": "^6.0.0",
-    "unified": "^7.0.1",
+    "unified": "^8.0.0",
     "unist-util-visit": "^1.1.1",
     "vfile-reporter": "^6.0.0",
     "vfile-statistics": "^1.0.0"
