@@ -5,7 +5,6 @@ permalink: embed/javascript.html
 nav: embed
 pid: embed-js
 ---
-Use this JavaScript Client to interact and receive events from our [Sheet Music Embed](https://flat.io/embed).
 
 If you have any feedback or questions regarding this product, [please feel free to contact our developers support](mailto:developers@flat.io).
 
@@ -42,6 +41,22 @@ The simplest way to get started is to pass a DOM element to our embed that will 
   });
 </script>
 ```
+
+Otherwise, if you are using our embed in an ES6 project:
+
+```js
+import Embed from 'flat-embed';
+
+const container = document.getElementById('embed-container');
+const embed = new Embed(container, {
+  score: '<score-id-you-want-to-load>',
+  embedParams: {
+    appId: '<your-app-id>',
+    controlsPosition: 'bottom',
+  }
+});
+```
+
 *[>> Open this demo in JSFiddle](https://jsfiddle.net/gierschv/jr91116y/)*
 
 ### App ID
