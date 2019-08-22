@@ -3,6 +3,7 @@ ruby RUBY_VERSION
 
 gem "jekyll", ">= 3.8.4"
 gem 'therubyracer'
+gem 'nokogiri', '>= 1.10.4'
 
 group :jekyll_plugins do
     gem 'jekyll-less', git: 'https://github.com/sfi0zy/jekyll-less.git'
