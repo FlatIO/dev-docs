@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
-gem "jekyll", ">= 3.8.4"
+gem "jekyll", "~> 3.8.4"
 gem 'therubyracer'
 gem 'nokogiri', '>= 1.10.4'
 
