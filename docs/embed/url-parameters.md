@@ -26,6 +26,7 @@ These URL query strings control the engraving display of your music scores. You 
 | [`layout`](#change-the-music-engraving-layout-mode-layout) | Display the score in responsive, page or track mode | `responsive`, `page` or `track` (default = `responsive`) |
 | [`zoom`](#change-zoom-scaling-zoom) | Default zoom value | `auto` or `0.1` to `3` (default = `auto`)|
 | [`drawOnlyFirstPage`](#only-display-the-first-page-drawonlyfirstpage) | Only display the first `page` | `false` |
+| [`parts`](#specify-the-parts-to-display-parts) | Specify the parts to display | all the parts |
 
 ## Controls & Theme customization
 
@@ -42,6 +43,7 @@ If you want to customize the controls, including changing their main colors or h
 | [`controlsPanel`](#display-or-hide-the-extra-controls-button-controlspanel) | Display or hide the extra controls button | `true` or `false` (default = `true`)|
 | [`controlsZoom`](#display-or-hide-zoom--controls-controlszoom) | Display or hide the zoom control | `true` or `false` (default = `true`)|
 | [`controlsPrint`](#display-or-hide-print-control-controlsprint) | Display or hide the print button | `true` or `false` (default = `true`)|
+| [`controlsParts`](#display-or-hide-the-parts-list-controlsparts) | Display or hide the parts list | `true` or `false` (default = `false`)|
 
 ## Audio & Video sources
 
@@ -103,6 +105,24 @@ Here is a demo with this option and the following parameters:
 
 ![Only display the first page]({{site.baseurl}}/assets/img/embed-drawOnlyFirstPage.png)
 
+### Specify the parts to display (`parts`)
+
+By default, the embed will display all the parts of your embedded documents. You can choose the parts to display by default, by providing the list of the parts with a `parts` parameter.
+
+This parameter supports multiple formats for the parts references, which must be separated by a comma:
+
+* Parts UUIDs,
+* Part indexes (idx), starting at `0` for the first part,
+* Part names (e.g. `Piano`),
+* Part Abbreviation (e.g. `Pno.`)
+
+Examples of valid inputs:
+
+* `parts=0,3,4`
+* `parts=Violin,Viola`
+
+You can also use the [`controlsParts` option](#display-or-hide-the-parts-list-controlsparts) to display a component that will allow your users to choose the part(s) to display.
+
 ### Remove Flat branding (`branding`)
 
 To remove the Flat logo from the controls, set the parameter `branding` to `false`.
@@ -139,7 +159,7 @@ This control is displayed by default, you can hide it by setting this parameter 
 
 ![Side Panel control]({{site.baseurl}}/assets/img/embed-panel-ctrl.png)
 
-### Display or hide Zoom  controls (`controlsZoom`)
+### Display or hide the Zoom controls (`controlsZoom`)
 
 This side panel is enabled by default, you can disable it by setting this parameter to `false`.
 
@@ -150,6 +170,12 @@ This side panel is enabled by default, you can disable it by setting this parame
 This control is displayed by default, you can hide it by setting this parameter to `false`.
 
 ![Print control]({{site.baseurl}}/assets/img/embed-fullscreen-ctrl.png)
+
+### Display or hide the Parts List (`controlsParts`)
+
+This component can be displayed by setting this parameter to `true`, and having a score with at least two parts.
+
+![Print control]({{site.baseurl}}/assets/img/embed-parts-ctrl.png)
 
 ### Embed theme
 
