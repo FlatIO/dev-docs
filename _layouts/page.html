@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% if page.nav == 'rest' %}{% include nav-rest.html %}
+{% elsif page.nav == 'import' %}{% include nav-import.html %}
+{% elsif page.nav == 'embed' %}{% include nav-embed.html %}{% endif %}
+
+<div class="page">
+  {{ content }}
+</div>

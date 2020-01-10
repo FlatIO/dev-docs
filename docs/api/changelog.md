@@ -10,8 +10,19 @@ We regularly update our API and services, you can discover all the changes to ou
 
 ## Upcoming deprecations
 
-* On 2019-09-01:
+* On 2020-01-01:
   * `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
+
+## v2.9.0 (upcoming)
+
+* Schema is now using OpenAPI 3.0.2 (previous schemas were using OpenAPI 2)
+* feat(scores): New metadata and update of `GET/PUT /v2/scores/{score}`:
+  * `arranger` property has been added
+  * `plays` statistics are now returned (`ScorePlaysCounts`)
+* feat(scores): New `now` proprty on the `DELETE` method to schedule a deletion to be executed shortly (avoid keeping in trash)
+* feat(edu): Attachments (`MediaAttachment` and `ClassAttachmentCreation`) have new type `googleDrive` for attached Drive file, and a new `googleDriveFileId` property. If the attachment is a `googleDrive` item, the `iconUrl` and `mimeType` properties are also returned
+* feat(edu): Add `microsoftGraph` info to `ClassDetails` (e.g. `GET /v2/classes` and `GET /v2/classes/{class}`)
+* feat(account): Add `firstname` and `lastname` properties for education accounts
 
 ## v2.8.0 (2019-04-27)
 

@@ -1,12 +1,6 @@
 ---
-layout: default
+layout: page
 ---
 
-{% if page.nav == 'rest' %}{% include nav-rest.html %}
-{% elsif page.nav == 'import' %}{% include nav-import.html %}
-{% elsif page.nav == 'embed' %}{% include nav-embed.html %}{% endif %}
-
-<div class="page">
-  {% unless page.notitle %}<h1>{{ page.title }}</h1>{% endunless %}
-  <div class="doc-content">{{ content }}</div>
-</div>
+{% unless page.notitle %}<h1>{{ page.title }}</h1>{% endunless %}
+<div class="doc-content">{{ content }}</div>
