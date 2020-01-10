@@ -10,10 +10,10 @@ We regularly update our API and services, you can discover all the changes to ou
 
 ## Upcoming deprecations
 
-* On 2020-01-01:
+* On 2020-03-01:
   * `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
 
-## v2.9.0 (upcoming)
+## v2.9.0 (2019-01-10)
 
 * Schema is now using OpenAPI 3.0.2 (previous schemas were using OpenAPI 2)
 * feat(scores): New metadata and update of `GET/PUT /v2/scores/{score}`:
