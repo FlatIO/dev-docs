@@ -190,6 +190,7 @@ You can completely change the embed theme by changing the different color option
 | `themeCursorV0` | Cursor 1st Voice color | [color (hex)](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) |
 | `themeCursorV1` | Cursor 2nd Voice color | [color (hex)](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) |
 | `themeSelection` | Selection color | [color (hex)](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) |
+| `themeScoreBackground` | Background of score | `white` or `transparent` |
 
 Please note that these parameters need to be encoded if needed (e.g. `themeControlsBackground=%23B71C1C`).
 
@@ -201,6 +202,10 @@ Demo: Let's say that we want to hide the Flat branding, display the controls dif
 * ```themeCursorV0=#E53935```
 
 ![Embed themes demo]({{site.baseurl}}/assets/img/embed-colors.png)
+
+The `transparent` background option (`themeScoreBackground`) can be used when your page has a light background that is not white and that you are using the [`page` layout mode](#change-the-music-engraving-layout-mode-layout):
+
+![Non-white background]({{site.baseurl}}/assets/img/embed-transparent-background.png)
 
 ### Video position (`videoPosition`)
 
