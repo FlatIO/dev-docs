@@ -699,6 +699,12 @@ embed.getMeasureDetails().then(function (measure) {
   //         "beats": 4,
   //         "beat-type": 4
   //     },
+  //     "tempo": {
+  //         "qpm": 80,
+  //         "bpm": 80,
+  //         "durationType": "quarter",
+  //         "nbDots": 0
+  //     },
   //     "transpose": {
   //         "chromatic": "0"
   //     },
@@ -842,6 +848,12 @@ The payload of this event is the same as the returned value from [`getMeasureDet
     "displayedTime": {
         "beats": 4,
         "beat-type": 4
+    },
+    "tempo": {
+        "qpm": 80,
+        "bpm": 80,
+        "durationType": "quarter",
+        "nbDots": 0
     },
     "transpose": {
         "chromatic": "0"
