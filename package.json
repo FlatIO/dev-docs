@@ -19,7 +19,7 @@
     "retext-quotes": "^4.0.0",
     "retext-readability": "^6.0.0",
     "retext-repeated-words": "^2.0.0",
-    "retext-sentence-spacing": "^3.0.0",
+    "retext-sentence-spacing": "^4.0.0",
     "retext-simplify": "^5.0.0",
     "retext-words": "bkeepers/retext-words",
     "to-vfile": "^6.0.0",
