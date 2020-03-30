@@ -73,7 +73,7 @@ Both **Authorization Code** and **Implicit** OAuth2 grants start with our author
 The first step is to build an authorization link where you can redirect your user. Here is a simple example:
 
 ```
-https://flat.io/auth/oauth?client_id=<client_id>&response_type=(code|token)state=<state>&scope=account.public_profile+scores&redirect_uri=<redirect_uri>
+https://flat.io/auth/oauth?client_id=<client_id>&response_type=(code|token)&state=<state>&scope=account.public_profile+scores&redirect_uri=<redirect_uri>
 ```
 
 You can find below the different parameters available, including non-standard and optional parameters. All of them can be passed as query string when redirecting the end-user to the authorization page.
