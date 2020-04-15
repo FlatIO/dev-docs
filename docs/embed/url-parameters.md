@@ -25,8 +25,9 @@ These URL query strings control the engraving display of your music scores. You 
 |:----------------|:--------|:-------|
 | [`layout`](#change-the-music-engraving-layout-mode-layout) | Display the score in responsive, page or track mode | `responsive`, `page` or `track` (default = `responsive`) |
 | [`zoom`](#change-zoom-scaling-zoom) | Default zoom value | `auto` or `0.1` to `3` (default = `auto`)|
-| [`drawOnlyFirstPage`](#only-display-the-first-page-drawonlyfirstpage) | Only display the first `page` | `false` |
 | [`parts`](#specify-the-parts-to-display-parts) | Specify the parts to display | all the parts |
+| [`drawOnlyFirstPage`](#only-display-the-first-page-drawonlyfirstpage) | Only display the first `page` | `false` |
+| [`hideNonTab`](#only-display-the-tablature-of-the-parts-hidenontab) | Only display the tablatures | `false` |
 
 ## Controls & Theme customization
 
@@ -92,19 +93,6 @@ Example with `zoom=3` (i.e. Zoom x3):
 
 ![Embed zoom]({{site.baseurl}}/assets/img/embed-zoom.png)
 
-### Only display the first `page` (`drawOnlyFirstPage`)
-
-If you want to only draw the first page of the score, for example, to create a preview of a score. Please note that the complete file will still be completely loaded in the embed. To protect it, we advise you to use a dedicated preview file with only 1 page or little more available to display.
-
-Here is a demo with this option and the following parameters:
-
-* ```drawOnlyFirstPage=true```
-* ```branding=false```
-* ```controlsPosition=top```
-* ```controlsPrint=false```
-
-![Only display the first page]({{site.baseurl}}/assets/img/embed-drawOnlyFirstPage.png)
-
 ### Specify the parts to display (`parts`)
 
 By default, the embed will display all the parts of your embedded documents. You can choose the parts to display by default, by providing the list of the parts with a `parts` parameter.
@@ -122,6 +110,25 @@ Examples of valid inputs:
 * `parts=Violin,Viola`
 
 You can also use the [`controlsParts` option](#display-or-hide-the-parts-list-controlsparts) to display a component that will allow your users to choose the part(s) to display.
+
+### Only display the first `page` (`drawOnlyFirstPage`)
+
+If you want to only draw the first page of the score, for example, to create a preview of a score. Please note that the complete file will still be completely loaded in the embed. To protect it, we advise you to use a dedicated preview file with only 1 page or little more available to display.
+
+Here is a demo with this option and the following parameters:
+
+* ```drawOnlyFirstPage=true```
+* ```branding=false```
+* ```controlsPosition=top```
+* ```controlsPrint=false```
+
+![Only display the first page]({{site.baseurl}}/assets/img/embed-drawOnlyFirstPage.png)
+
+### Only display the tablature of the parts (`hideNonTab`)
+
+If you want to only display the tablatures of the parts, and hide the music notations staves, you can enable the `hideNonTab` option.
+
+![No Flat branding]({{site.baseurl}}/assets/img/embed-hideNonTab.png)
 
 ### Remove Flat branding (`branding`)
 
