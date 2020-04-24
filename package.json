@@ -11,7 +11,7 @@
     "ignore": "^5.0.3",
     "js-yaml": "^3.6.1",
     "remark-lint": "^6.0.0",
-    "remark-parse": "^7.0.0",
+    "remark-parse": "^8.0.2",
     "remark-retext": "^3.0.0",
     "remark-stringify": "^7.0.0",
     "retext-english": "^3.0.0",
