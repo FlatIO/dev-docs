@@ -13,6 +13,17 @@ We regularly update our API and services, you can discover all the changes to ou
 * On 2020-03-01:
   * `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
 
+## v2.10.0 (2020-06-03)
+* feat(edu): `POST /v2/organizations/users` now accepts optional `firstname` and `lastname`
+* update(edu): `GET /v2/organizations/users` now accepts sort options and filters
+* feat(edu): added `GET /v2/organizations/users/count` to count users matching specified filters
+* feat(edu): removed deprecated `role` property from `POST /organizations/invitations` (previously renamed to `organizationRole`)
+* feat(assignments): added `POST/DELETE /v2/classes/{class}/assignments/{assignment}/archive` to archive/unarchive assignments
+* feat(assignments): returned assignments object from `GET /v2/classes/{class}/assignments/{assignment}` now includes the main type of the assignment: `newScore`, `scoreTemplare` or `sharedWriting`.
+* feat(edu): users returned by `GET /v2/groups/{group}/users` can now be filtered by the sync source: `googleClassroom`, `microsoftGraph` or `clever`.
+* feat(scores): scores details returned by `GET /v2/scores/{score}` (and similar) now includes the audio samples list used by our playback. The `instruments` property now includes a normalized list of instruments that is not dependent from the samples used.
+
+
 ## v2.9.0 (2020-01-10)
 
 * Schema is now using OpenAPI 3.0.2 (previous schemas were using OpenAPI 2)
