@@ -14,6 +14,7 @@ We regularly update our API and services, you can discover all the changes to ou
   * `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
 
 ## v2.10.0 (2020-06-03)
+
 * feat(edu): `POST /v2/organizations/users` now accepts optional `firstname` and `lastname`
 * update(edu): `GET /v2/organizations/users` now accepts sort options and filters
 * feat(edu): added `GET /v2/organizations/users/count` to count users matching specified filters
