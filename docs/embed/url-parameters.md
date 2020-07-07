@@ -45,6 +45,7 @@ If you want to customize the controls, including changing their main colors or h
 | [`controlsZoom`](#display-or-hide-zoom--controls-controlszoom) | Display or hide the zoom control | `true` or `false` (default = `true`)|
 | [`controlsPrint`](#display-or-hide-print-control-controlsprint) | Display or hide the print button | `true` or `false` (default = `true`)|
 | [`controlsParts`](#display-or-hide-the-parts-list-controlsparts) | Display or hide the parts list | `true` or `false` (default = `false`)|
+| [`toolsetId`](#editor-toolset) | Editor Toolset | [The toolset id to use (see below)](#editor-toolset) |
 
 ## Audio & Video sources
 
@@ -183,6 +184,27 @@ This control is displayed by default, you can hide it by setting this parameter 
 This component can be displayed by setting this parameter to `true`, and having a score with at least two parts.
 
 ![Print control]({{site.baseurl}}/assets/img/embed-parts-ctrl.png)
+
+### Editor Toolset
+
+When using our embeddable editor, you might want to only make specific tools available to your end-users. Toolsets configurations are linked to your Flat developer account and can be managed in the [Embed Generator page](https://flat.io/developers/embed/generator):
+
+* Select the score to embed (or one of your testing scores if you want to use [`loadMusicXML()` from our SDK](/developers/docs/embed/javascript.html#loadmusicxmlscore-mixed-promisevoid-error))
+* Click on "**Editor**" under the "**Embed mode**"
+* Under the customizations features, you will be able to select and manage your toolsets:
+
+![Select a toolset]({{site.baseurl}}/assets/img/embed-toolset-input.png)
+
+You can then create and update your own configurations. They will be previewed on the generator page, making it easy to test and experiment our embed with your custom toolsets.
+
+![Select a toolset]({{site.baseurl}}/assets/img/embed-toolset-panel-edit.png)
+
+Once you selected a toolset, its identifier (`toolsetId`) will be displayed in the generated code or iframe URL at the bottom of the page.
+
+**Notes about toolsets**:
+
+  * Using a toolset **will enable or disable the tools across the embed**: toolbars, interfaces on the top of the score, mouse, keyboard shortcuts, and JavaScript API methods.
+  * Since the configurations are saved in your developer account, when updating the configuration on the generator page, **the updated configuration will also be applied in your existing embeds where you are using the same `toolsetId`**.
 
 ### Embed theme
 
