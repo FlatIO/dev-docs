@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/"
+  to = "/developers/docs/api/"
+  status = 302
