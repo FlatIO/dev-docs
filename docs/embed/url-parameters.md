@@ -28,6 +28,8 @@ These URL query strings control the engraving display of your music scores. You 
 | [`parts`](#specify-the-parts-to-display-parts) | Specify the parts to display | all the parts |
 | [`drawOnlyFirstPage`](#only-display-the-first-page-drawonlyfirstpage) | Only display the first `page` | `false` |
 | [`hideNonTab`](#only-display-the-tablature-of-the-parts-hidenontab) | Only display the tablatures | `false` |
+| [`displayFirstLinePartsNames`](#hide-part-names) | Hide part names | `true` |
+| [`displayOtherLinesPartsNames`](#Hide-non-first-part-names) | Hide non first line part names | `false` |
 
 ## Controls & Theme customization
 
@@ -130,6 +132,18 @@ Here is a demo with this option and the following parameters:
 If you want to only display the tablatures of the parts, and hide the music notations staves, you can enable the `hideNonTab` option.
 
 ![No Flat branding]({{site.baseurl}}/assets/img/embed-hideNonTab.png)
+
+### Hide part names (`displayFirstLinePartsNames`)
+
+If you want to hide the part (instrument) names, you can set the `displayFirstLinePartsNames` option to false.
+
+![Do not display part names]({{site.baseurl}}/assets/img/embed-hideAllPartName.png)
+
+### Hide non first part names (`displayOtherLinesPartsNames`)
+
+If you want to only display part (instrument) names on the first system, you can set the `displayOtherLinesPartsNames` option to false.
+
+![Do not display part names]({{site.baseurl}}/assets/img/embed-hideOtherPartName.png)
 
 ### Remove Flat branding (`branding`)
 
