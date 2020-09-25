@@ -28,8 +28,8 @@ These URL query strings control the engraving display of your music scores. You 
 | [`parts`](#specify-the-parts-to-display-parts) | Specify the parts to display | all the parts |
 | [`drawOnlyFirstPage`](#only-display-the-first-page-drawonlyfirstpage) | Only display the first `page` | `false` |
 | [`hideNonTab`](#only-display-the-tablature-of-the-parts-hidenontab) | Only display the tablatures | `false` |
-| [`displayFirstLinePartsNames`](#hide-part-names) | Hide part names | `true` |
-| [`displayOtherLinesPartsNames`](#Hide-non-first-part-names) | Hide non first line part names | `false` |
+| [`displayFirstLinePartsNames`](#hide-part-names-displayfirstlinepartsnames) | Hide part names | `true` |
+| [`displayOtherLinesPartsNames`](#Hide-non-first-part-names-displayotherlinespartsnames) | Hide non first line part names | `false` |
 
 ## Controls & Theme customization
 
