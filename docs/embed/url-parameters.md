@@ -28,6 +28,7 @@ These URL query strings control the engraving display of your music scores. You 
 | [`parts`](#specify-the-parts-to-display-parts) | Specify the parts to display | all the parts |
 | [`drawOnlyFirstPage`](#only-display-the-first-page-drawonlyfirstpage) | Only display the first `page` | `false` |
 | [`hideNonTab`](#only-display-the-tablature-of-the-parts-hidenontab) | Only display the tablatures | `false` |
+| [`hideTempo`](#do-not-display-tempo-marks-hidetempo) | Do not display tempo marks | `false` |
 | [`displayFirstLinePartsNames`](#hide-part-names-displayfirstlinepartsnames) | Hide part names | `true` |
 | [`displayOtherLinesPartsNames`](#Hide-non-first-part-names-displayotherlinespartsnames) | Hide non first line part names | `false` |
 
@@ -132,6 +133,12 @@ Here is a demo with this option and the following parameters:
 If you want to only display the tablatures of the parts, and hide the music notations staves, you can enable the `hideNonTab` option.
 
 ![No Flat branding]({{site.baseurl}}/assets/img/embed-hideNonTab.png)
+
+### Do not display tempo marks (`hideTempo`)
+
+If you want to hide the tempo marks, you can enable the `hideTempo` option. 
+
+![No tempo marks]({{site.baseurl}}/assets/img/embed-hideTempo.png)
 
 ### Hide part names (`displayFirstLinePartsNames`)
 
