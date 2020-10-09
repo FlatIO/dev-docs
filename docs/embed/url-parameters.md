@@ -132,7 +132,7 @@ Here is a demo with this option and the following parameters:
 
 If you want to only display the tablatures of the parts, and hide the music notations staves, you can enable the `hideNonTab` option.
 
-![No Flat branding]({{site.baseurl}}/assets/img/embed-hideNonTab.png)
+![Only TAB]({{site.baseurl}}/assets/img/embed-hideNonTab.png)
 
 ### Do not display tempo marks (`hideTempo`)
 
