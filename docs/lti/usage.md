@@ -6,12 +6,14 @@ nav: rest
 pid: lti-usage
 ---
 
-Flat is an LTI Provider. This means that if you are or are using LTI Consumer, you can easily interact with our product [Flat for Education](https://flat.io/edu).
+[Flat for Education is a certified LTI Provider](https://site.imsglobal.org/certifications/tutteo-ltd/flat-for-education). This means that if you are or are using LTI Consumer, you can easily interact with our product [Flat for Education](https://flat.io/edu).
 
 We implement the following LTI specifications and extensions:
 
-* LTI v1.0
-* [LTI Content Item Message](https://www.imsglobal.org/specs/lticiv1p0/specification)
+* LTI 1.0
+* LTI 1.1
+* [LTI Outcomes Management Service 1.0](https://www.imsglobal.org/specs/ltiomv1p0/specification)
+* [LTI Content Item Message 1.0](https://www.imsglobal.org/specs/lticiv1p0/specification)
 * [Light-weight Content Extension](https://www.edu-apps.org/extensions/content.html)
 * [Canvas Navigation](https://www.eduappcenter.com/docs/extensions/canvas_navigation)
 * [Canvas WYSIIG](https://www.eduappcenter.com/docs/extensions/canvas_wysiwyg)
