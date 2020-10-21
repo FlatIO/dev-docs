@@ -43,6 +43,7 @@ If you want to customize the controls, including changing their main colors or h
 | [`controlsDisplay`](#display-or-hide-the-controls-controlsdisplay) | Display or hide main controls | `true` or `false` (default = `true`)|
 | [`controlsPosition`](#change-controls-position-controlsposition) | Controls position | `bottom` or `top` (default = `bottom`)|
 | [`controlsPlay`](#display-or-hide-playback-control-controlsplay) | Display or hide the playback controls | `true` or `false` (default = `true`)|
+| [`hideFlatPlayback`](#hide-flat-playback-hideflatplayback) | Hide Flat playback | `true` or `false` (default = `false`)|
 | [`controlsFullscreen`](#display-or-hide-fullscreen-control-controlsfullscreen) | Display or hide the fullscreen button | `true` or `false` (default = `true`)|
 | [`controlsPanel`](#display-or-hide-the-extra-controls-button-controlspanel) | Display or hide the extra controls button | `true` or `false` (default = `true`)|
 | [`controlsZoom`](#display-or-hide-zoom--controls-controlszoom) | Display or hide the zoom control | `true` or `false` (default = `true`)|
@@ -175,6 +176,12 @@ By default the controls are displayed at the `bottom` of the embed. You can choo
 This control is displayed by default, you can hide it by setting this parameter to `false`.
 
 ![Playback control]({{site.baseurl}}/assets/img/embed-play-ctrl.png)
+
+### Hide Flat playback (`hideFlatPlayback`)
+
+If you want to display only the alternative audio sources (mp3/video/soundcloud), set this one to true. 
+
+![Hide Flat Playback]({{site.baseurl}}/assets/img/embed-hideFlatPlayback.png)
 
 ### Display or hide Fullscreen control (`controlsFullscreen`)
 
