@@ -13,6 +13,28 @@ We regularly update our API and services, you can discover all the changes to ou
 * On 2020-03-01:
   * `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
 
+## v2.11.0 (2020-10-26)
+
+* feat(edu): `PUT /organizations/users/{user}` has new parameters to edit accounts: `username`, `firstname`, `lastname`, `email`.
+* feat(edu): `POST /classes/{class}/assignments` has new parameters:
+  * `toolset` id to enable [a toolset](https://flat.io/help/en/education/toolset.html) for the assignment.
+  * `nbPlaybackAuthorized` to limit the number of time the playback can be used
+  * `maxPoints` for grading purpose
+  * `googleClassroom.topicId` to add the assignment under a specific Google Classroom course topic
+  * `assigneeMode` and `assignedStudents` to assign specific students
+  * `lockScoreTemplate` to lock assigned templates
+  * `dueDate` and `scheduledDate` are nullable to unset properties
+  * returns new information about LTI assigments, Canvas assignments and MusicFirst assignments
+* feat(edu): `PUT /classes/{class}/assignments/{assignment}/submissions` has:
+  * New parameters for grading (`draftGrade`, `grade`)
+  * A new parameter for teacher to return a submission (`return`) and
+  * Computed comments counters (`comments`)
+  * Returned object `AssignmentSubmission` now includes `maxPoints` for the maximum number of points when the grade was set.
+* feat(edu): New endpoints under `/classes/{class}/assignments/{assignment}/submissions/{submission}/comments` to create, list, update and delete comments for the submission.
+* update(scores): `GET /scores/{score}/revisions/{revision}/{format}` query string `parts` now only accepts parts UUIDs.
+* update(edu): `GET /organizations/users` query string `licenseExpirationDate` now also accepts `active` and `notActive` values, and has a new query option `onlyIds`
+* **DEPRECATED**: `PUT /classes/{class}/assignments/{assignment}/submissions` parameters `studentComment` and `returnFeedback` have been removed. `returnFeedback` has been replace by a boolean `return` to return a submission as a teacher.
+
 ## v2.10.0 (2020-06-03)
 
 * feat(edu): `POST /v2/organizations/users` now accepts optional `firstname` and `lastname`
