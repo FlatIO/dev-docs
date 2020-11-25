@@ -29,6 +29,7 @@ These URL query strings control the engraving display of your music scores. You 
 | [`drawOnlyFirstPage`](#only-display-the-first-page-drawonlyfirstpage) | Only display the first `page` | `false` |
 | [`hideNonTab`](#only-display-the-tablature-of-the-parts-hidenontab) | Only display the tablatures | `false` |
 | [`hideTempo`](#do-not-display-tempo-marks-hidetempo) | Do not display tempo marks | `false` |
+| [`displayOutOfPitch`](#highlight-notes-out-of-tessitura-displayoutofpitch) | Highlight notes our of tessitura | `true` |
 | [`displayFirstLinePartsNames`](#hide-part-names-displayfirstlinepartsnames) | Hide part names | `true` |
 | [`displayOtherLinesPartsNames`](#Hide-non-first-part-names-displayotherlinespartsnames) | Hide non first line part names | `false` |
 
@@ -140,6 +141,14 @@ If you want to only display the tablatures of the parts, and hide the music nota
 If you want to hide the tempo marks, you can enable the `hideTempo` option. 
 
 ![No tempo marks]({{site.baseurl}}/assets/img/embed-hideTempo.png)
+
+### Highlight notes out of tessitura (`displayOutOfPitch`)
+
+If notes go out of the tessitura (out of the available sound range for the instrument), there will be not playback for those notes. 
+By default we highlight those notes with a red color, and some transparency effect. 
+If you want to remove this behaviour, you can set the `displayOutOfPitch` to false. 
+
+![Notes out of tessitura]({{site.baseurl}}/assets/img/embed-displayOutOfPitch.png)
 
 ### Hide part names (`displayFirstLinePartsNames`)
 
