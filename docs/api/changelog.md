@@ -10,8 +10,17 @@ We regularly update our API and services, you can discover all the changes to ou
 
 ## Upcoming deprecations
 
-* On 2020-03-01:
+* After 2020-03-01:
   * `GET /users/{user}/scores` will no longer list private and shared scores, but only public scores of a Flat account.
+
+## v2.12.0 (2021-02-18)
+
+* update(scores): `ResourceCollaborator` now includes a `invited` boolean property to know if the collaborator is still a pending invite.
+* feat(assignments): Export grades as CSV and Excel files (`GET /classes/{class}/assignments/{assignment}/submissions/csv` and `/classes/{class}/assignments/{assignment}/submissions/excel`)
+* update(assignments): Assignment creation (`POST /classes/{class}/assignments`) and assignments objects now include a `type` (`AssignmentType`).
+* update(assignments): Assignments objects (`Assignment`) now include a cover URL (`cover`) and the corresponding file identifier (`coverFile).
+* update(assignments): Assignment copy (`POST /classes/{class}/assignments/{assignment}/copy`) now accepts an optional `assigment` identifier. This can be used to override a draft assignment with the content from another assignment.
+* style: Lint OpenAPI v3 specification
 
 ## v2.11.0 (2020-10-26)
 
